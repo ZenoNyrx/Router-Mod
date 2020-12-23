@@ -1,0 +1,39 @@
+type: UnitFactory
+name: Unit Router
+description: Makes router units.
+
+size: 5
+
+consumes: {
+	power: 2
+	liquid: {
+		liquid: cryofluid
+		amount: 0.2
+		booster: false
+	}
+}
+
+plans: [
+	{
+		unit: leg-router
+		requirements: [
+			item-router/200
+			silicon/400
+			copper/100
+			lead/100
+			graphite/200
+			thorium/100
+		]
+		time: 10000
+	}
+]
+
+requirements: [
+	item-router/2000
+	copper/2000
+	lead/2000
+	silicon/2000
+]
+
+category: units
+research: ground-factory
